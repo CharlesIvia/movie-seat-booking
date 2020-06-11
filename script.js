@@ -4,3 +4,12 @@ const container = document.querySelector(".container"),
   count = document.getElementById("count"),
   total = document.getElementById("total"),
   movieSelect = document.getElementById("movie");
+
+let ticketPrice = +movieSelect.value;
+
+//Save selected movie index and price
+
+function setMovieData(movieIndex, moviePrice) {
+  localStorage.setItem("selectedMovieIndex", movieIndex);
+  localStorage.setItem("selectedMoviePrice", moviePrice);
+}
