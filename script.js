@@ -48,3 +48,10 @@ function populateUI() {
   }
 }
 
+//Create movie event
+
+movieSelect.addEventListener("change", (e) => {
+  ticketPrice = +e.target.value;
+  setMovieData(e.target.selectedIndex, e.target.value);
+  updateSelectedCount();
+});
